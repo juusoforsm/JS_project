@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(153, 160, 255);
+}
+.container {
+width: 35rem;
+margin-left: auto;
+margin-right: auto;
+background-color: rgb(101, 111, 255);
+border-radius: 25px;
+box-shadow: 0px 5px 5px 0px;
+}
+
+#inputti, header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 10vh;
+    padding: 10px;
+    margin: 10px;
+    
+}
+header {
+    color: white;
+    font-family:'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px black;
+   
+    
+}
+button{
+    border: 0.5px;
+    font-size: 20px;
+    padding: 5px;
+    
+ 
+}
+input {
+    border: solid 1px rgb(101, 111, 255);
+    max-width: 35vw;
+    font-family: cursive;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px 0px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+#todo-nappi {
+   
+    background-color: rgb(251, 126, 255);
+    cursor: pointer;
+    margin-left: 5px;
+    transition: all 0.2s;
+    color: #27266d;
+    border-radius: 5px;
+    transition: all 0.2s;
+    font-size: 22px;
+    width: 6%;
+    box-shadow: 0px 2px 2px 0px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    
+
+}
+#todo-nappi:hover{
+    color:white;
+    background-color: rgb(249, 81, 255);
+    border-radius: 2px;
+    transform: translateY(-0.075em);
+    box-shadow: none;
+}
+#todo-lista{
+    min-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    padding: 10px;
+}
+.valmis-nappi{
+    background-color: rgb(153, 160, 255);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    transition: all 0.2s;
+    margin-left: 1vh;
+    border-radius: 5px;
+    width: 6%;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.poisto-nappi{
+    background-color: rgb(153, 160, 255);
+    border:none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    transition: all 0.2s;
+    margin-left: 1vh;
+    border-radius: 5px;
+    width: 6%;
+}
+.valmis-nappi:hover{
+    color: white;
+    background-color: rgb(130, 228, 106);
+    border-radius: 2px;
+    transform: translateY(-0.1em);
+}
+.poisto-nappi:hover{
+    color: white;
+    background-color: rgb(252, 104, 104);
+    border-radius: 2px;
+    transform: translateY(-0.075em);
+}
+.todo {
+    margin: 1rem;
+    background: white;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    font-family: cursive;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+
+
+}
+.todo li{
+    flex: 1;
+}
+.todo-item{
+padding-left: 1rem;
+}
+.valmis{
+    text-decoration: line-through;
+    opacity: 0.5;
+    background-color: rgba(255, 255, 255, 0.548);
+    transition: all 0.2s;
+}
+div.todo:nth-child(odd) {
+    background-color: #27266d;
+    color: white;
+    
+}
+.todo-options{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 9vh;
+}
+#active {
+    background-color: rgb(251, 126, 255);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+    transition: all 0.2s;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-family: cursive;
+    box-shadow:0px 1px 1px 0px;
+}
+#completed {
+    background-color: rgb(251, 126, 255);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+    transition: all 0.2s;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-family: cursive;
+    box-shadow:0px 1px 1px 0px;
+    
+}
+#all{
+    background-color: rgb(251, 126, 255);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+    transition: all 0.2s;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-family: cursive;
+    box-shadow:0px 1px 1px 0px;
+}
+#clear-completed{
+    background-color: rgb(153, 160, 255);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+    transition: all 0.2s;
+    margin-left: 20%;
+    border-radius: 5px;
+    font-family: cursive;
+    box-shadow: 0px 1px 1px 0px;
+    
+    
+}
+#active:hover {
+    color: white;
+    background-color: #4ebfd8;
+    border-radius: 2px;
+    transform: translateY(-0.1em);
+    box-shadow: none;
+    
+
+}
+#completed:hover {
+    color: white;
+    background-color: rgb(130, 228, 106);
+    border-radius: 2px;
+    transform: translateY(-0.1em);
+    box-shadow: none;
+}
+#all:hover {
+    color: white;
+    background-color: rgb(249, 81, 255);  
+    border-radius: 2px;
+    transform: translateY(-0.1em);
+    box-shadow: none;
+}
+#clear-completed:hover {
+    color: white;
+    background-color: rgb(255, 123, 123);
+    border-radius: 2px;
+    transform: translateY(-0.1em);
+    box-shadow: none;
+}
